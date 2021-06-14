@@ -43,7 +43,6 @@ public class AmendBookingPage extends BrowserConfig {
 
 	public void captureRoomAvailableMsg(String bookingRef) {
 		String msg = null;
-		Timeout.waitTillLoading(3000);
 		if (roomsAvailabilityNotification.getAttribute("innerText").contains("Rooms available"))
 			msg = roomsAvailableMessage.getAttribute("innerText");
 		else
