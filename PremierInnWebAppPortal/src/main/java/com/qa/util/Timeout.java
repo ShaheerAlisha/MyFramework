@@ -6,7 +6,9 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class Timeout extends BrowserConfig {
+import com.qa.pages.BasePage;
+
+public class Timeout extends BasePage {
 
 	public static void waitImplicit() {
 		driver.manage().timeouts().implicitlyWait(Integer.parseInt(PropManager.getProp("implicitWaitTimeout")),

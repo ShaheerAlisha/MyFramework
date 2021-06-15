@@ -3,7 +3,7 @@ package com.qa.util;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class BrowserConfig extends PropManager {
+public abstract class BrowserConfig extends PropManager {
 
 	public static WebDriver driver;
 
@@ -19,7 +19,7 @@ public class BrowserConfig extends PropManager {
 			driver = new ChromeDriver();
 			break;
 
-		case "ie": // IE driver properties and path
+		case "FF": // Other driver properties and path
 			break;
 
 		default:
@@ -40,5 +40,7 @@ public class BrowserConfig extends PropManager {
 		driver.get(PropManager.getProp("url"));
 
 	}
+	
+	public abstract String getPageTitle();
 
 }

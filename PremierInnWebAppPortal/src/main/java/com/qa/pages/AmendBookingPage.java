@@ -4,15 +4,12 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
-import com.qa.util.BrowserConfig;
 import com.qa.util.Timeout;
 import com.qa.util.WriteData;
 
-public class AmendBookingPage extends BrowserConfig {
+public class AmendBookingPage extends BasePage {
 
-
-	//AmendBookingPage element identification
+	// AmendBookingPage element identification
 	@FindBy(id = "arrivalDate")
 	private WebElement arrivalDateSelect;
 
@@ -27,16 +24,12 @@ public class AmendBookingPage extends BrowserConfig {
 
 	public final String title = "Amend Details";
 
-	//Initializing AmendBookingPage WebElements using PageFactory
+	// Initializing AmendBookingPage WebElements using PageFactory
 	public AmendBookingPage() {
 		PageFactory.initElements(driver, this);
 	}
 
 	// Actions to be performed on AmendBookingPage
-	public String getPageTitle() {
-		return driver.getTitle();
-	}
-
 	public void changeArrivalDate() {
 		arrivalDateSelect.click();
 		arrivalDateSelect.sendKeys(Keys.ARROW_DOWN);

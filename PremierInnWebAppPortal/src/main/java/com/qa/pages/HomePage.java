@@ -8,12 +8,10 @@ import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
-
-import com.qa.util.BrowserConfig;
 import com.qa.util.DateValidator;
 import com.qa.util.Timeout;
 
-public class HomePage extends BrowserConfig {
+public class HomePage extends BasePage {
 
 
 	//HomePage element identification
@@ -42,10 +40,6 @@ public class HomePage extends BrowserConfig {
 	}
 
 	// Actions to be performed on HomePage
-	public String getPageTitle() {
-		return driver.getTitle();
-	}
-
 	public void selectManageBooking() {
 		manageBooking.click();
 	}

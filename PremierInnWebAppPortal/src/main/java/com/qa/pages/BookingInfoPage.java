@@ -3,14 +3,11 @@ package com.qa.pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
-import com.qa.util.BrowserConfig;
 import com.qa.util.Timeout;
 
-public class BookingInfoPage extends BrowserConfig {
+public class BookingInfoPage extends BasePage {
 
-
-	//BookingInfoPage element identification
+	// BookingInfoPage element identification
 	@FindBy(xpath = "//h3[@data-test-id='booking-reference']")
 	private WebElement bookingReferenceID;
 
@@ -19,16 +16,12 @@ public class BookingInfoPage extends BrowserConfig {
 
 	public final String title = "Premier Inn Dashboard";
 
-	//Initializing BookingInfoPage WebElements using PageFactory
+	// Initializing BookingInfoPage WebElements using PageFactory
 	public BookingInfoPage() {
 		PageFactory.initElements(driver, this);
 	}
 
 	// Actions to be performed on BookingInfoPage
-	public String getPageTitle() {
-		return driver.getTitle();
-	}
-
 	public String verifyBookingInfo() {
 		return bookingReferenceID.getText();
 	}

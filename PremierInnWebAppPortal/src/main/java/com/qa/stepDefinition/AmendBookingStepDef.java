@@ -2,21 +2,23 @@ package com.qa.stepDefinition;
 
 import java.text.ParseException;
 
-import org.junit.Assert;
+import org.testng.Assert;
+import org.testng.asserts.SoftAssert;
+
 import com.qa.pages.AmendBookingPage;
 import com.qa.pages.BookingInfoPage;
 import com.qa.pages.HomePage;
-import com.qa.util.BrowserConfig;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
-public class AmendBookingStepDef extends BrowserConfig {
+public class AmendBookingStepDef {
 
 	// Create Object reference for Pages
 	HomePage homePage = new HomePage();
 	BookingInfoPage bookingInfoPage;
 	AmendBookingPage amendBookingPage;
+	SoftAssert softAssert = new SoftAssert();
 
 	// Start of Step Definition Methods
 	@Given("user opens homepage")
@@ -53,11 +55,12 @@ public class AmendBookingStepDef extends BrowserConfig {
 
 		String actualTitle = bookingInfoPage.getPageTitle();
 		String expectedTitle = bookingInfoPage.title;
-		Assert.assertEquals(expectedTitle, actualTitle);
+		softAssert.assertEquals(expectedTitle, actualTitle);
 
 		String actualRefID = bookingInfoPage.verifyBookingInfo();
-		Assert.assertEquals(bookingRef, actualRefID);
+		softAssert.assertEquals(bookingRef, actualRefID);
 		amendBookingPage = bookingInfoPage.selectAmendBooking();
+		softAssert.assertAll();
 
 	}
 
