@@ -5,7 +5,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class DateValidator {
-	
+
 	//Method to validate if a date is Valid or not
 	public static boolean isValidDate(String dateInString) {
 		boolean flag = true;
@@ -26,5 +26,13 @@ public class DateValidator {
 		SimpleDateFormat sdf2 = new SimpleDateFormat("ddMyyyy");
 		Date date = sdf1.parse(dateInString);
 		return sdf2.format(date);
+	}
+
+	public static String getDate(String dateInString) throws ParseException {
+		SimpleDateFormat sdf1 = new SimpleDateFormat("dd-MMMM-yy");
+		SimpleDateFormat sdf2 = new SimpleDateFormat("dd");
+		Date date = sdf1.parse(dateInString);
+		return sdf2.format(date);
+
 	}
 }

@@ -13,20 +13,20 @@ public abstract class BrowserConfig extends PropManager {
 		String browser = PropManager.getProp("browserName");
 
 		switch (browser.trim().toLowerCase()) {
-		// Initialize Browser
-		case "chrome":
-			System.setProperty(PropManager.getProp("chromeProperty"), PropManager.getProp("chromePath"));
-			driver = new ChromeDriver();
-			break;
+			// Initialize Browser
+			case "chrome":
+				System.setProperty(PropManager.getProp("chromeProperty"), PropManager.getProp("chromePath"));
+				driver = new ChromeDriver();
+				break;
 
-		case "FF": // Other driver properties and path
-			break;
+			case "FF": // Other driver properties and path
+				break;
 
-		default:
-			break;
+			default:
+				break;
 		}
 		driver.manage().window().maximize();
-		
+
 		// delete cookies
 		driver.manage().deleteAllCookies();
 
@@ -40,7 +40,8 @@ public abstract class BrowserConfig extends PropManager {
 		driver.get(PropManager.getProp("url"));
 
 	}
-	
+
+	// Abstract Method
 	public abstract String getPageTitle();
 
 }

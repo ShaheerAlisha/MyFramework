@@ -1,9 +1,12 @@
 package com.qa.pages;
 
-import org.openqa.selenium.Keys;
+import java.text.ParseException;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+
+import com.qa.util.DateValidator;
 import com.qa.util.Timeout;
 import com.qa.util.WriteData;
 
@@ -22,6 +25,8 @@ public class AmendBookingPage extends BasePage {
 	@FindBy(xpath = "//div[@data-test='rooms_unavailable_message']")
 	private WebElement roomUnavailableMessage;
 
+	private By amendDate;
+
 	public final String title = "Amend Details";
 
 	// Initializing AmendBookingPage WebElements using PageFactory
@@ -30,9 +35,19 @@ public class AmendBookingPage extends BasePage {
 	}
 
 	// Actions to be performed on AmendBookingPage
-	public void changeArrivalDate() {
+	public void changeArrivalDate(String amendedDate) {
 		arrivalDateSelect.click();
-		arrivalDateSelect.sendKeys(Keys.ARROW_DOWN);
+		String amendDateInput = null;
+		if (DateValidator.isValidDate(amendedDate)) {
+			try {
+				amendDateInput = DateValidator.getDate(amendedDate);
+			} catch (ParseException e) {
+				e.printStackTrace();
+			}
+		}
+		amendDateInput = "//table//td[@data-day='" + amendDateInput + "']";
+		amendDate = By.xpath(amendDateInput);
+		driver.findElement(amendDate).click();
 	}
 
 	public void captureRoomAvailableMsg(String bookingRef) {

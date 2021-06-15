@@ -8,7 +8,7 @@ import java.util.Properties;
 public class PropManager {
 
 	private static Properties prop;
-	
+
 	//Constructor to invoke Property file
 	public PropManager() {
 		try {
@@ -21,7 +21,7 @@ public class PropManager {
 			e.printStackTrace();
 		}
 	}
-	
+
 	//Get values from Property file
 	public static String getProp(String key) {
 		return prop.getProperty(key);

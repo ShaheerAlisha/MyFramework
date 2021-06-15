@@ -1,0 +1,453 @@
+[
+  {
+    "line": 5,
+    "elements": [
+      {
+        "start_timestamp": "2021-06-15T10:40:05.318Z",
+        "line": 17,
+        "name": "Change the arrival date to different date for the given set of BookingReferences",
+        "description": "",
+        "id": "amend-booking-in-premierinn-web-portal;change-the-arrival-date-to-different-date-for-the-given-set-of-bookingreferences;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\r\n\tat com.qa.pages.BasePage.getPageTitle(BasePage.java:9)\r\n\tat com.qa.stepDefinition.AmendBookingStepDef.user_open_web_page_url(AmendBookingStepDef.java:27)\r\n\tat ✽.user opens homepage(classpath:Features/AmendBooking.feature:8)\r\n",
+              "duration": 204902700,
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "user opens homepage",
+            "match": {
+              "location": "AmendBookingStepDef.user_open_web_page_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1661700,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "user select Manage Booking",
+            "match": {
+              "location": "AmendBookingStepDef.user_select_manage_booking()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1116700,
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "enter \"AYHR171492\",\"Tester\", \"21-June-21\" to search booking",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"AYHR171492\"",
+                  "offset": 6
+                },
+                {
+                  "val": "\"Tester\"",
+                  "offset": 19
+                },
+                {
+                  "val": "\"21-June-21\"",
+                  "offset": 29
+                }
+              ],
+              "location": "AmendBookingStepDef.enter_to_search_booking(String,String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 222100,
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "verify the booking information \"AYHR171492\" and click on Amend Booking",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"AYHR171492\"",
+                  "offset": 31
+                }
+              ],
+              "location": "AmendBookingStepDef.verify_the_booking_information_and_click_on_amend_booking(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 165300,
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "click on arrival date field and change the date",
+            "match": {
+              "location": "AmendBookingStepDef.click_on_arrival_date_field_and_change_the_date()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 962500,
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "capture the Rooms available information in csv file \"AYHR171492\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"AYHR171492\"",
+                  "offset": 52
+                }
+              ],
+              "location": "AmendBookingStepDef.capture_the_rooms_available_information_in_csv_file(String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-15T10:40:05.588Z",
+        "line": 18,
+        "name": "Change the arrival date to different date for the given set of BookingReferences",
+        "description": "",
+        "id": "amend-booking-in-premierinn-web-portal;change-the-arrival-date-to-different-date-for-the-given-set-of-bookingreferences;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\r\n\tat com.qa.pages.BasePage.getPageTitle(BasePage.java:9)\r\n\tat com.qa.stepDefinition.AmendBookingStepDef.user_open_web_page_url(AmendBookingStepDef.java:27)\r\n\tat ✽.user opens homepage(classpath:Features/AmendBooking.feature:8)\r\n",
+              "duration": 1693000,
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "user opens homepage",
+            "match": {
+              "location": "AmendBookingStepDef.user_open_web_page_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 279500,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "user select Manage Booking",
+            "match": {
+              "location": "AmendBookingStepDef.user_select_manage_booking()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 323700,
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "enter \"BGIR73460\",\"Tester\", \"21-June-21\" to search booking",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"BGIR73460\"",
+                  "offset": 6
+                },
+                {
+                  "val": "\"Tester\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\"21-June-21\"",
+                  "offset": 28
+                }
+              ],
+              "location": "AmendBookingStepDef.enter_to_search_booking(String,String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 235800,
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "verify the booking information \"BGIR73460\" and click on Amend Booking",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"BGIR73460\"",
+                  "offset": 31
+                }
+              ],
+              "location": "AmendBookingStepDef.verify_the_booking_information_and_click_on_amend_booking(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 254300,
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "click on arrival date field and change the date",
+            "match": {
+              "location": "AmendBookingStepDef.click_on_arrival_date_field_and_change_the_date()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 264200,
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "capture the Rooms available information in csv file \"BGIR73460\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"BGIR73460\"",
+                  "offset": 52
+                }
+              ],
+              "location": "AmendBookingStepDef.capture_the_rooms_available_information_in_csv_file(String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-15T10:40:05.595Z",
+        "line": 19,
+        "name": "Change the arrival date to different date for the given set of BookingReferences",
+        "description": "",
+        "id": "amend-booking-in-premierinn-web-portal;change-the-arrival-date-to-different-date-for-the-given-set-of-bookingreferences;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\r\n\tat com.qa.pages.BasePage.getPageTitle(BasePage.java:9)\r\n\tat com.qa.stepDefinition.AmendBookingStepDef.user_open_web_page_url(AmendBookingStepDef.java:27)\r\n\tat ✽.user opens homepage(classpath:Features/AmendBooking.feature:8)\r\n",
+              "duration": 1672500,
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "user opens homepage",
+            "match": {
+              "location": "AmendBookingStepDef.user_open_web_page_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 328700,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "user select Manage Booking",
+            "match": {
+              "location": "AmendBookingStepDef.user_select_manage_booking()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 272000,
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "enter \"BFER85199\",\"Tester\", \"21-June-21\" to search booking",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"BFER85199\"",
+                  "offset": 6
+                },
+                {
+                  "val": "\"Tester\"",
+                  "offset": 18
+                },
+                {
+                  "val": "\"21-June-21\"",
+                  "offset": 28
+                }
+              ],
+              "location": "AmendBookingStepDef.enter_to_search_booking(String,String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 422000,
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "verify the booking information \"BFER85199\" and click on Amend Booking",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"BFER85199\"",
+                  "offset": 31
+                }
+              ],
+              "location": "AmendBookingStepDef.verify_the_booking_information_and_click_on_amend_booking(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 292300,
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "click on arrival date field and change the date",
+            "match": {
+              "location": "AmendBookingStepDef.click_on_arrival_date_field_and_change_the_date()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 259000,
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "capture the Rooms available information in csv file \"BFER85199\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"BFER85199\"",
+                  "offset": 52
+                }
+              ],
+              "location": "AmendBookingStepDef.capture_the_rooms_available_information_in_csv_file(String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-06-15T10:40:05.602Z",
+        "line": 20,
+        "name": "Change the arrival date to different date for the given set of BookingReferences",
+        "description": "",
+        "id": "amend-booking-in-premierinn-web-portal;change-the-arrival-date-to-different-date-for-the-given-set-of-bookingreferences;;5",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\r\n\tat com.qa.pages.BasePage.getPageTitle(BasePage.java:9)\r\n\tat com.qa.stepDefinition.AmendBookingStepDef.user_open_web_page_url(AmendBookingStepDef.java:27)\r\n\tat ✽.user opens homepage(classpath:Features/AmendBooking.feature:8)\r\n",
+              "duration": 3661600,
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "user opens homepage",
+            "match": {
+              "location": "AmendBookingStepDef.user_open_web_page_url()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 312300,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "user select Manage Booking",
+            "match": {
+              "location": "AmendBookingStepDef.user_select_manage_booking()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 413600,
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "enter \"AYHR171905\",\"Tester\", \"21-June-21\" to search booking",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"AYHR171905\"",
+                  "offset": 6
+                },
+                {
+                  "val": "\"Tester\"",
+                  "offset": 19
+                },
+                {
+                  "val": "\"21-June-21\"",
+                  "offset": 29
+                }
+              ],
+              "location": "AmendBookingStepDef.enter_to_search_booking(String,String,String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 306000,
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "verify the booking information \"AYHR171905\" and click on Amend Booking",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"AYHR171905\"",
+                  "offset": 31
+                }
+              ],
+              "location": "AmendBookingStepDef.verify_the_booking_information_and_click_on_amend_booking(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 208700,
+              "status": "skipped"
+            },
+            "line": 12,
+            "name": "click on arrival date field and change the date",
+            "match": {
+              "location": "AmendBookingStepDef.click_on_arrival_date_field_and_change_the_date()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 199000,
+              "status": "skipped"
+            },
+            "line": 13,
+            "name": "capture the Rooms available information in csv file \"AYHR171905\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"AYHR171905\"",
+                  "offset": 52
+                }
+              ],
+              "location": "AmendBookingStepDef.capture_the_rooms_available_information_in_csv_file(String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Amend booking in PremierInn web portal",
+    "description": "",
+    "id": "amend-booking-in-premierinn-web-portal",
+    "keyword": "Feature",
+    "uri": "classpath:Features/AmendBooking.feature",
+    "tags": []
+  }
+]

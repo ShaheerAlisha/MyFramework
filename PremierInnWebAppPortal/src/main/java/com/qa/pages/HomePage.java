@@ -33,7 +33,7 @@ public class HomePage extends BasePage {
 
 	private By arrivalDatePicker;
 	public final String title = "Premier Inn hotels | Book direct";
-	
+
 	//Initializing HomePage WebElements using PageFactory
 	public HomePage() {
 		PageFactory.initElements(driver, this);
@@ -52,12 +52,17 @@ public class HomePage extends BasePage {
 		lastName.sendKeys(name);
 	}
 
-	public void enterArrivalDate(String arrivalDate) throws ParseException {
+	public void enterArrivalDate(String arrivalDate) {
 		String arrivalDateInput = null;
 		arrivalDateElement.click();
 
-		if (DateValidator.isValidDate(arrivalDate))
-			arrivalDateInput = DateValidator.covertDateFormat(arrivalDate);
+		if (DateValidator.isValidDate(arrivalDate)) {
+			try {
+				arrivalDateInput = DateValidator.covertDateFormat(arrivalDate);
+			} catch (ParseException e) {
+				e.printStackTrace();
+			}
+		}
 		arrivalDateInput = "date-picker-day-" + arrivalDateInput;
 		arrivalDatePicker = By.id(arrivalDateInput);
 		driver.findElement(arrivalDatePicker).click();
