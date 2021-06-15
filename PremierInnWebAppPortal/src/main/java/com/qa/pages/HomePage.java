@@ -2,6 +2,7 @@ package com.qa.pages;
 
 import java.text.ParseException;
 
+import com.qa.util.CommonPageUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
@@ -11,7 +12,7 @@ import org.openqa.selenium.support.PageFactory;
 import com.qa.util.DateValidator;
 import com.qa.util.Timeout;
 
-public class HomePage extends BasePage {
+public class HomePage extends CommonPageUtils {
 
 
 	//HomePage element identification

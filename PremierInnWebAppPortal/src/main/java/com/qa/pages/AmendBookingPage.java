@@ -1,6 +1,8 @@
 package com.qa.pages;
 
 import java.text.ParseException;
+
+import com.qa.util.CommonPageUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -10,7 +12,7 @@ import com.qa.util.DateValidator;
 import com.qa.util.Timeout;
 import com.qa.util.WriteData;
 
-public class AmendBookingPage extends BasePage {
+public class AmendBookingPage extends CommonPageUtils {
 
 	// AmendBookingPage element identification
 	@FindBy(id = "arrivalDate")
@@ -51,14 +53,14 @@ public class AmendBookingPage extends BasePage {
 	}
 
 	public void captureRoomAvailableMsg(String bookingRef) {
-		String msg = null;
+		String message = null;
 		Timeout.waitTillLoading(1000);
 		if (roomsAvailabilityNotification.getAttribute("innerText").contains("Rooms available"))
-			msg = roomsAvailableMessage.getAttribute("innerText");
+			message = roomsAvailableMessage.getAttribute("innerText");
 		else
-			msg = roomUnavailableMessage.getAttribute("innerText");
+			message = roomUnavailableMessage.getAttribute("innerText");
 
-		WriteData.writeToCSV(bookingRef, msg);
+		WriteData.writeToCSV(bookingRef, message);
 	}
 
 }

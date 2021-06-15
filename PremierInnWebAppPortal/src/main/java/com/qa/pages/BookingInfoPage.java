@@ -1,11 +1,12 @@
 package com.qa.pages;
 
+import com.qa.util.CommonPageUtils;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import com.qa.util.Timeout;
 
-public class BookingInfoPage extends BasePage {
+public class BookingInfoPage extends CommonPageUtils {
 
     // BookingInfoPage element identification
     @FindBy(xpath = "//h3[@data-test-id='booking-reference']")
@@ -22,6 +23,11 @@ public class BookingInfoPage extends BasePage {
     }
 
     // Actions to be performed on BookingInfoPage
+    @Override
+    public String getPageTitle() {
+        return driver.getTitle();
+    }
+
     public String verifyBookingInfo() {
         return bookingReferenceID.getText();
     }
