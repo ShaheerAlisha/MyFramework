@@ -1,4 +1,8 @@
 #Author: shaheer.alisha@cognizant.com
+#Feature: List of scenarios.
+#Scenario: Business rule through list of steps with arguments.
+#Scenario Outline: List of steps for data-driven as an Examples
+
 Feature: Amend booking in PremierInn web portal
 
   Scenario Outline: Change the arrival date to different date for the given set of BookingReferences

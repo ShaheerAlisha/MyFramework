@@ -13,6 +13,7 @@ public class Timeout extends BrowserConfig {
 				TimeUnit.SECONDS);
 	}
 
+	// Method Overloading
 	public static void waitImplicit(Long timeInSeconds) {
 		driver.manage().timeouts().implicitlyWait(timeInSeconds, TimeUnit.SECONDS);
 	}

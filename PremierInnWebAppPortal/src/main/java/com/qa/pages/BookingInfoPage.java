@@ -9,10 +9,6 @@ import com.qa.util.Timeout;
 
 public class BookingInfoPage extends BrowserConfig {
 
-	//Initializing BookingInfoPage WebElements using PageFactory
-	public BookingInfoPage() {
-		PageFactory.initElements(driver, this);
-	}
 
 	//BookingInfoPage element identification
 	@FindBy(xpath = "//h3[@data-test-id='booking-reference']")
@@ -22,6 +18,11 @@ public class BookingInfoPage extends BrowserConfig {
 	private WebElement amendBookingButton;
 
 	public final String title = "Premier Inn Dashboard";
+
+	//Initializing BookingInfoPage WebElements using PageFactory
+	public BookingInfoPage() {
+		PageFactory.initElements(driver, this);
+	}
 
 	// Actions to be performed on BookingInfoPage
 	public String getPageTitle() {

@@ -1,13 +1,13 @@
 [
   {
-    "line": 2,
+    "line": 6,
     "elements": [
       {
-        "start_timestamp": "2021-06-12T20:45:57.422Z",
+        "start_timestamp": "2021-06-15T05:02:24.677Z",
         "before": [
           {
             "result": {
-              "duration": 6436885100,
+              "duration": 10075871700,
               "status": "passed"
             },
             "match": {
@@ -15,14 +15,14 @@
             }
           }
         ],
-        "line": 14,
+        "line": 18,
         "name": "Change the arrival date to different date for the given set of BookingReferences",
         "description": "",
         "id": "amend-booking-in-premierinn-web-portal;change-the-arrival-date-to-different-date-for-the-given-set-of-bookingreferences;;2",
         "after": [
           {
             "result": {
-              "duration": 676040300,
+              "duration": 727830100,
               "status": "passed"
             },
             "match": {
@@ -35,10 +35,10 @@
         "steps": [
           {
             "result": {
-              "duration": 201320400,
+              "duration": 365213000,
               "status": "passed"
             },
-            "line": 5,
+            "line": 9,
             "name": "user opens homepage",
             "match": {
               "location": "AmendBookingStepDef.user_open_web_page_url()"
@@ -47,10 +47,10 @@
           },
           {
             "result": {
-              "duration": 276831300,
+              "duration": 362956900,
               "status": "passed"
             },
-            "line": 6,
+            "line": 10,
             "name": "user select Manage Booking",
             "match": {
               "location": "AmendBookingStepDef.user_select_manage_booking()"
@@ -59,10 +59,10 @@
           },
           {
             "result": {
-              "duration": 4501725500,
+              "duration": 4376363400,
               "status": "passed"
             },
-            "line": 7,
+            "line": 11,
             "name": "enter \"AYHR171492\",\"Tester\", \"21-June-21\" to search booking",
             "match": {
               "arguments": [
@@ -85,10 +85,10 @@
           },
           {
             "result": {
-              "duration": 6794724400,
+              "duration": 6928280100,
               "status": "passed"
             },
-            "line": 8,
+            "line": 12,
             "name": "verify the booking information \"AYHR171492\" and click on Amend Booking",
             "match": {
               "arguments": [
@@ -103,10 +103,10 @@
           },
           {
             "result": {
-              "duration": 217972300,
+              "duration": 432800400,
               "status": "passed"
             },
-            "line": 9,
+            "line": 13,
             "name": "click on arrival date field and change the date",
             "match": {
               "location": "AmendBookingStepDef.click_on_arrival_date_field_and_change_the_date()"
@@ -115,10 +115,10 @@
           },
           {
             "result": {
-              "duration": 3089038400,
+              "duration": 1110642700,
               "status": "passed"
             },
-            "line": 10,
+            "line": 14,
             "name": "capture the Rooms available information in csv file \"AYHR171492\"",
             "match": {
               "arguments": [
@@ -134,11 +134,11 @@
         ]
       },
       {
-        "start_timestamp": "2021-06-12T20:46:19.648Z",
+        "start_timestamp": "2021-06-15T05:02:49.100Z",
         "before": [
           {
             "result": {
-              "duration": 5269197400,
+              "duration": 5173432100,
               "status": "passed"
             },
             "match": {
@@ -146,14 +146,14 @@
             }
           }
         ],
-        "line": 15,
+        "line": 19,
         "name": "Change the arrival date to different date for the given set of BookingReferences",
         "description": "",
         "id": "amend-booking-in-premierinn-web-portal;change-the-arrival-date-to-different-date-for-the-given-set-of-bookingreferences;;3",
         "after": [
           {
             "result": {
-              "duration": 667337400,
+              "duration": 648140700,
               "status": "passed"
             },
             "match": {
@@ -166,10 +166,10 @@
         "steps": [
           {
             "result": {
-              "duration": 226019500,
+              "duration": 91398700,
               "status": "passed"
             },
-            "line": 5,
+            "line": 9,
             "name": "user opens homepage",
             "match": {
               "location": "AmendBookingStepDef.user_open_web_page_url()"
@@ -178,10 +178,10 @@
           },
           {
             "result": {
-              "duration": 198420400,
+              "duration": 797766100,
               "status": "passed"
             },
-            "line": 6,
+            "line": 10,
             "name": "user select Manage Booking",
             "match": {
               "location": "AmendBookingStepDef.user_select_manage_booking()"
@@ -190,10 +190,10 @@
           },
           {
             "result": {
-              "duration": 3721956700,
+              "duration": 3948111500,
               "status": "passed"
             },
-            "line": 7,
+            "line": 11,
             "name": "enter \"BGIR73460\",\"Tester\", \"21-June-21\" to search booking",
             "match": {
               "arguments": [
@@ -216,10 +216,10 @@
           },
           {
             "result": {
-              "duration": 6512242900,
+              "duration": 6103450900,
               "status": "passed"
             },
-            "line": 8,
+            "line": 12,
             "name": "verify the booking information \"BGIR73460\" and click on Amend Booking",
             "match": {
               "arguments": [
@@ -234,10 +234,10 @@
           },
           {
             "result": {
-              "duration": 289894800,
+              "duration": 252969700,
               "status": "passed"
             },
-            "line": 9,
+            "line": 13,
             "name": "click on arrival date field and change the date",
             "match": {
               "location": "AmendBookingStepDef.click_on_arrival_date_field_and_change_the_date()"
@@ -246,10 +246,10 @@
           },
           {
             "result": {
-              "duration": 3105628800,
+              "duration": 1068211600,
               "status": "passed"
             },
-            "line": 10,
+            "line": 14,
             "name": "capture the Rooms available information in csv file \"BGIR73460\"",
             "match": {
               "arguments": [
@@ -265,11 +265,11 @@
         ]
       },
       {
-        "start_timestamp": "2021-06-12T20:46:39.644Z",
+        "start_timestamp": "2021-06-15T05:03:07.188Z",
         "before": [
           {
             "result": {
-              "duration": 4959171500,
+              "duration": 5586387200,
               "status": "passed"
             },
             "match": {
@@ -277,14 +277,14 @@
             }
           }
         ],
-        "line": 16,
+        "line": 20,
         "name": "Change the arrival date to different date for the given set of BookingReferences",
         "description": "",
         "id": "amend-booking-in-premierinn-web-portal;change-the-arrival-date-to-different-date-for-the-given-set-of-bookingreferences;;4",
         "after": [
           {
             "result": {
-              "duration": 664192000,
+              "duration": 670847000,
               "status": "passed"
             },
             "match": {
@@ -297,10 +297,10 @@
         "steps": [
           {
             "result": {
-              "duration": 249335900,
+              "duration": 386243100,
               "status": "passed"
             },
-            "line": 5,
+            "line": 9,
             "name": "user opens homepage",
             "match": {
               "location": "AmendBookingStepDef.user_open_web_page_url()"
@@ -309,10 +309,10 @@
           },
           {
             "result": {
-              "duration": 260450000,
+              "duration": 307774200,
               "status": "passed"
             },
-            "line": 6,
+            "line": 10,
             "name": "user select Manage Booking",
             "match": {
               "location": "AmendBookingStepDef.user_select_manage_booking()"
@@ -321,10 +321,10 @@
           },
           {
             "result": {
-              "duration": 3645459900,
+              "duration": 3915304800,
               "status": "passed"
             },
-            "line": 7,
+            "line": 11,
             "name": "enter \"BFER85199\",\"Tester\", \"21-June-21\" to search booking",
             "match": {
               "arguments": [
@@ -347,10 +347,10 @@
           },
           {
             "result": {
-              "duration": 4866616100,
+              "duration": 5563670400,
               "status": "passed"
             },
-            "line": 8,
+            "line": 12,
             "name": "verify the booking information \"BFER85199\" and click on Amend Booking",
             "match": {
               "arguments": [
@@ -365,10 +365,10 @@
           },
           {
             "result": {
-              "duration": 235408400,
+              "duration": 340499600,
               "status": "passed"
             },
-            "line": 9,
+            "line": 13,
             "name": "click on arrival date field and change the date",
             "match": {
               "location": "AmendBookingStepDef.click_on_arrival_date_field_and_change_the_date()"
@@ -377,10 +377,10 @@
           },
           {
             "result": {
-              "duration": 3109948100,
+              "duration": 1066370500,
               "status": "passed"
             },
-            "line": 10,
+            "line": 14,
             "name": "capture the Rooms available information in csv file \"BFER85199\"",
             "match": {
               "arguments": [
@@ -396,11 +396,11 @@
         ]
       },
       {
-        "start_timestamp": "2021-06-12T20:46:57.640Z",
+        "start_timestamp": "2021-06-15T05:03:25.029Z",
         "before": [
           {
             "result": {
-              "duration": 4867895000,
+              "duration": 5743308000,
               "status": "passed"
             },
             "match": {
@@ -408,14 +408,14 @@
             }
           }
         ],
-        "line": 17,
+        "line": 21,
         "name": "Change the arrival date to different date for the given set of BookingReferences",
         "description": "",
         "id": "amend-booking-in-premierinn-web-portal;change-the-arrival-date-to-different-date-for-the-given-set-of-bookingreferences;;5",
         "after": [
           {
             "result": {
-              "duration": 714471400,
+              "duration": 677007000,
               "status": "passed"
             },
             "match": {
@@ -428,10 +428,10 @@
         "steps": [
           {
             "result": {
-              "duration": 196550500,
+              "duration": 107941800,
               "status": "passed"
             },
-            "line": 5,
+            "line": 9,
             "name": "user opens homepage",
             "match": {
               "location": "AmendBookingStepDef.user_open_web_page_url()"
@@ -440,10 +440,10 @@
           },
           {
             "result": {
-              "duration": 293616100,
+              "duration": 225113600,
               "status": "passed"
             },
-            "line": 6,
+            "line": 10,
             "name": "user select Manage Booking",
             "match": {
               "location": "AmendBookingStepDef.user_select_manage_booking()"
@@ -452,10 +452,10 @@
           },
           {
             "result": {
-              "duration": 3705386900,
+              "duration": 3675399000,
               "status": "passed"
             },
-            "line": 7,
+            "line": 11,
             "name": "enter \"AYHR171905\",\"Tester\", \"21-June-21\" to search booking",
             "match": {
               "arguments": [
@@ -478,10 +478,10 @@
           },
           {
             "result": {
-              "duration": 5236231800,
+              "duration": 6962591800,
               "status": "passed"
             },
-            "line": 8,
+            "line": 12,
             "name": "verify the booking information \"AYHR171905\" and click on Amend Booking",
             "match": {
               "arguments": [
@@ -496,10 +496,10 @@
           },
           {
             "result": {
-              "duration": 295233100,
+              "duration": 239141200,
               "status": "passed"
             },
-            "line": 9,
+            "line": 13,
             "name": "click on arrival date field and change the date",
             "match": {
               "location": "AmendBookingStepDef.click_on_arrival_date_field_and_change_the_date()"
@@ -508,10 +508,10 @@
           },
           {
             "result": {
-              "duration": 3066782100,
+              "duration": 1086687800,
               "status": "passed"
             },
-            "line": 10,
+            "line": 14,
             "name": "capture the Rooms available information in csv file \"AYHR171905\"",
             "match": {
               "arguments": [

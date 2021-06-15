@@ -15,11 +15,7 @@ import com.qa.util.Timeout;
 
 public class HomePage extends BrowserConfig {
 
-	//Initializing HomePage WebElements using PageFactory
-	public HomePage() {
-		PageFactory.initElements(driver, this);
-	}
-	
+
 	//HomePage element identification
 	@FindBy(how = How.ID, using = "find-a-booking")
 	@CacheLookup
@@ -39,6 +35,11 @@ public class HomePage extends BrowserConfig {
 
 	private By arrivalDatePicker;
 	public final String title = "Premier Inn hotels | Book direct";
+	
+	//Initializing HomePage WebElements using PageFactory
+	public HomePage() {
+		PageFactory.initElements(driver, this);
+	}
 
 	// Actions to be performed on HomePage
 	public String getPageTitle() {

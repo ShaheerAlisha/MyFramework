@@ -11,10 +11,6 @@ import com.qa.util.WriteData;
 
 public class AmendBookingPage extends BrowserConfig {
 
-	//Initializing AmendBookingPage WebElements using PageFactory
-	public AmendBookingPage() {
-		PageFactory.initElements(driver, this);
-	}
 
 	//AmendBookingPage element identification
 	@FindBy(id = "arrivalDate")
@@ -31,6 +27,11 @@ public class AmendBookingPage extends BrowserConfig {
 
 	public final String title = "Amend Details";
 
+	//Initializing AmendBookingPage WebElements using PageFactory
+	public AmendBookingPage() {
+		PageFactory.initElements(driver, this);
+	}
+
 	// Actions to be performed on AmendBookingPage
 	public String getPageTitle() {
 		return driver.getTitle();
@@ -38,11 +39,12 @@ public class AmendBookingPage extends BrowserConfig {
 
 	public void changeArrivalDate() {
 		arrivalDateSelect.click();
-		arrivalDateSelect.sendKeys(Keys.ARROW_LEFT);
+		arrivalDateSelect.sendKeys(Keys.ARROW_DOWN);
 	}
 
 	public void captureRoomAvailableMsg(String bookingRef) {
 		String msg = null;
+		Timeout.waitTillLoading(1000);
 		if (roomsAvailabilityNotification.getAttribute("innerText").contains("Rooms available"))
 			msg = roomsAvailableMessage.getAttribute("innerText");
 		else

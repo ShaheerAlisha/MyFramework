@@ -1,5 +1,7 @@
 package com.qa.stepDefinition;
 
+import java.text.ParseException;
+
 import org.junit.Assert;
 import com.qa.pages.AmendBookingPage;
 import com.qa.pages.BookingInfoPage;
@@ -32,11 +34,15 @@ public class AmendBookingStepDef extends BrowserConfig {
 	}
 
 	@Then("enter {string},{string}, {string} to search booking")
-	public void enter_to_search_booking(String bookingRef, String lastName, String arrivalDate) throws Exception {
+	public void enter_to_search_booking(String bookingRef, String lastName, String arrivalDate) {
 
 		homePage.enterBookingReference(bookingRef);
 		homePage.enterLastName(lastName);
-		homePage.enterArrivalDate(arrivalDate);
+		try {
+			homePage.enterArrivalDate(arrivalDate);
+		} catch (ParseException e) {
+			e.printStackTrace();
+		}
 		bookingInfoPage = homePage.searchBooking();
 
 	}

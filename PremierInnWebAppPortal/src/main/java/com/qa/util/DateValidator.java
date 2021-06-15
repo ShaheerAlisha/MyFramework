@@ -9,7 +9,6 @@ public class DateValidator {
 	//Method to validate if a date is Valid or not
 	public static boolean isValidDate(String dateInString) {
 		boolean flag = true;
-		dateInString = "22-June-21";
 		SimpleDateFormat sdf = new SimpleDateFormat("dd-MMMM-yy");
 		sdf.setLenient(false);
 		try {
