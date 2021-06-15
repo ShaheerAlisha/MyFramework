@@ -23,7 +23,7 @@ public class BookingInfoPage extends CommonPageUtils {
     }
 
     // Actions to be performed on BookingInfoPage
-    @Override
+    //Method overriding
     public String getPageTitle() {
         return driver.getTitle();
     }
