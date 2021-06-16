@@ -6,8 +6,9 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(plugin = {"pretty","html:target/cucumberHtmlReport/cucumber-html-report.html"}, glue = {
-        "com.qa.stepDefinition"}, features = "classpath:features"
+@CucumberOptions(plugin = {"pretty", "html:target/cucumberHtmlReport/cucumber-html-report.html",
+        "json:target/cucumberHtmlReport/cucumber-json-report.json"}, glue = {
+        "com.qa.stepDefinition", "com.qa.hooks"}, features = "classpath:features"
 )
 public class TestRunner {
 }

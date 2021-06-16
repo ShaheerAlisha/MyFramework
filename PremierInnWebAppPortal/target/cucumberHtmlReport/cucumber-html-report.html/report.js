@@ -1,4 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("classpath:Features/AmendBooking.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("classpath:features/AmendBooking.feature");
 formatter.feature({
   "name": "Amend booking in PremierInn web portal",
   "description": "",
@@ -26,7 +26,7 @@ formatter.step({
   "keyword": "Then "
 });
 formatter.step({
-  "name": "click on arrival date field and change the date",
+  "name": "click on arrival date field and change the date \"\u003cAmendedDate\u003e\"",
   "keyword": "Then "
 });
 formatter.step({
@@ -59,7 +59,7 @@ formatter.examples({
         "BGIR73460",
         "Tester",
         "21-June-21",
-        "22-June-21"
+        "23-June-21"
       ]
     },
     {
@@ -67,7 +67,7 @@ formatter.examples({
         "BFER85199",
         "Tester",
         "21-June-21",
-        "22-June-21"
+        "24-June-21"
       ]
     },
     {
@@ -75,7 +75,7 @@ formatter.examples({
         "AYHR171905",
         "Tester",
         "21-June-21",
-        "22-June-21"
+        "25-June-21"
       ]
     }
   ]
@@ -85,6 +85,9 @@ formatter.scenario({
   "description": "",
   "keyword": "Scenario Outline"
 });
+formatter.before({
+  "status": "passed"
+});
 formatter.step({
   "name": "user opens homepage",
   "keyword": "Given "
@@ -93,8 +96,7 @@ formatter.match({
   "location": "AmendBookingStepDef.user_open_web_page_url()"
 });
 formatter.result({
-  "error_message": "java.lang.NullPointerException\r\n\tat com.qa.pages.BasePage.getPageTitle(BasePage.java:9)\r\n\tat com.qa.stepDefinition.AmendBookingStepDef.user_open_web_page_url(AmendBookingStepDef.java:27)\r\n\tat ✽.user opens homepage(classpath:Features/AmendBooking.feature:8)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.step({
   "name": "user select Manage Booking",
@@ -104,7 +106,7 @@ formatter.match({
   "location": "AmendBookingStepDef.user_select_manage_booking()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "enter \"AYHR171492\",\"Tester\", \"21-June-21\" to search booking",
@@ -114,7 +116,7 @@ formatter.match({
   "location": "AmendBookingStepDef.enter_to_search_booking(String,String,String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "verify the booking information \"AYHR171492\" and click on Amend Booking",
@@ -124,17 +126,17 @@ formatter.match({
   "location": "AmendBookingStepDef.verify_the_booking_information_and_click_on_amend_booking(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
-  "name": "click on arrival date field and change the date",
+  "name": "click on arrival date field and change the date \"22-June-21\"",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "AmendBookingStepDef.click_on_arrival_date_field_and_change_the_date()"
+  "location": "AmendBookingStepDef.click_on_arrival_date_field_and_change_the_date(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "capture the Rooms available information in csv file \"AYHR171492\"",
@@ -144,12 +146,18 @@ formatter.match({
   "location": "AmendBookingStepDef.capture_the_rooms_available_information_in_csv_file(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
 });
 formatter.scenario({
   "name": "Change the arrival date to different date for the given set of BookingReferences",
   "description": "",
   "keyword": "Scenario Outline"
+});
+formatter.before({
+  "status": "passed"
 });
 formatter.step({
   "name": "user opens homepage",
@@ -159,8 +167,7 @@ formatter.match({
   "location": "AmendBookingStepDef.user_open_web_page_url()"
 });
 formatter.result({
-  "error_message": "java.lang.NullPointerException\r\n\tat com.qa.pages.BasePage.getPageTitle(BasePage.java:9)\r\n\tat com.qa.stepDefinition.AmendBookingStepDef.user_open_web_page_url(AmendBookingStepDef.java:27)\r\n\tat ✽.user opens homepage(classpath:Features/AmendBooking.feature:8)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.step({
   "name": "user select Manage Booking",
@@ -170,7 +177,7 @@ formatter.match({
   "location": "AmendBookingStepDef.user_select_manage_booking()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "enter \"BGIR73460\",\"Tester\", \"21-June-21\" to search booking",
@@ -180,7 +187,7 @@ formatter.match({
   "location": "AmendBookingStepDef.enter_to_search_booking(String,String,String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "verify the booking information \"BGIR73460\" and click on Amend Booking",
@@ -190,17 +197,17 @@ formatter.match({
   "location": "AmendBookingStepDef.verify_the_booking_information_and_click_on_amend_booking(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
-  "name": "click on arrival date field and change the date",
+  "name": "click on arrival date field and change the date \"23-June-21\"",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "AmendBookingStepDef.click_on_arrival_date_field_and_change_the_date()"
+  "location": "AmendBookingStepDef.click_on_arrival_date_field_and_change_the_date(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "capture the Rooms available information in csv file \"BGIR73460\"",
@@ -210,12 +217,18 @@ formatter.match({
   "location": "AmendBookingStepDef.capture_the_rooms_available_information_in_csv_file(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
 });
 formatter.scenario({
   "name": "Change the arrival date to different date for the given set of BookingReferences",
   "description": "",
   "keyword": "Scenario Outline"
+});
+formatter.before({
+  "status": "passed"
 });
 formatter.step({
   "name": "user opens homepage",
@@ -225,8 +238,7 @@ formatter.match({
   "location": "AmendBookingStepDef.user_open_web_page_url()"
 });
 formatter.result({
-  "error_message": "java.lang.NullPointerException\r\n\tat com.qa.pages.BasePage.getPageTitle(BasePage.java:9)\r\n\tat com.qa.stepDefinition.AmendBookingStepDef.user_open_web_page_url(AmendBookingStepDef.java:27)\r\n\tat ✽.user opens homepage(classpath:Features/AmendBooking.feature:8)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.step({
   "name": "user select Manage Booking",
@@ -236,7 +248,7 @@ formatter.match({
   "location": "AmendBookingStepDef.user_select_manage_booking()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "enter \"BFER85199\",\"Tester\", \"21-June-21\" to search booking",
@@ -246,7 +258,7 @@ formatter.match({
   "location": "AmendBookingStepDef.enter_to_search_booking(String,String,String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "verify the booking information \"BFER85199\" and click on Amend Booking",
@@ -256,17 +268,17 @@ formatter.match({
   "location": "AmendBookingStepDef.verify_the_booking_information_and_click_on_amend_booking(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
-  "name": "click on arrival date field and change the date",
+  "name": "click on arrival date field and change the date \"24-June-21\"",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "AmendBookingStepDef.click_on_arrival_date_field_and_change_the_date()"
+  "location": "AmendBookingStepDef.click_on_arrival_date_field_and_change_the_date(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "capture the Rooms available information in csv file \"BFER85199\"",
@@ -276,12 +288,18 @@ formatter.match({
   "location": "AmendBookingStepDef.capture_the_rooms_available_information_in_csv_file(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
 });
 formatter.scenario({
   "name": "Change the arrival date to different date for the given set of BookingReferences",
   "description": "",
   "keyword": "Scenario Outline"
+});
+formatter.before({
+  "status": "passed"
 });
 formatter.step({
   "name": "user opens homepage",
@@ -291,8 +309,7 @@ formatter.match({
   "location": "AmendBookingStepDef.user_open_web_page_url()"
 });
 formatter.result({
-  "error_message": "java.lang.NullPointerException\r\n\tat com.qa.pages.BasePage.getPageTitle(BasePage.java:9)\r\n\tat com.qa.stepDefinition.AmendBookingStepDef.user_open_web_page_url(AmendBookingStepDef.java:27)\r\n\tat ✽.user opens homepage(classpath:Features/AmendBooking.feature:8)\r\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.step({
   "name": "user select Manage Booking",
@@ -302,7 +319,7 @@ formatter.match({
   "location": "AmendBookingStepDef.user_select_manage_booking()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "enter \"AYHR171905\",\"Tester\", \"21-June-21\" to search booking",
@@ -312,7 +329,7 @@ formatter.match({
   "location": "AmendBookingStepDef.enter_to_search_booking(String,String,String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "verify the booking information \"AYHR171905\" and click on Amend Booking",
@@ -322,17 +339,17 @@ formatter.match({
   "location": "AmendBookingStepDef.verify_the_booking_information_and_click_on_amend_booking(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
-  "name": "click on arrival date field and change the date",
+  "name": "click on arrival date field and change the date \"25-June-21\"",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "AmendBookingStepDef.click_on_arrival_date_field_and_change_the_date()"
+  "location": "AmendBookingStepDef.click_on_arrival_date_field_and_change_the_date(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "capture the Rooms available information in csv file \"AYHR171905\"",
@@ -342,6 +359,9 @@ formatter.match({
   "location": "AmendBookingStepDef.capture_the_rooms_available_information_in_csv_file(String)"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
 });
 });

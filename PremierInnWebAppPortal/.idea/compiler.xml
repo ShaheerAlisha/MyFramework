@@ -6,11 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="PremierInnWebAppPortal" />
+        <module name="com.PremierInn" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="PremierInnWebAppPortal" target="1.8" />
+      <module name="com.PremierInn" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
