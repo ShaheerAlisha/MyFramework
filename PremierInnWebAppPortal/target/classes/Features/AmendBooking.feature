@@ -15,6 +15,6 @@ Feature: Amend booking in PremierInn web portal
     Examples:
       | BookingReference | LastName | ArrivalDate | AmendedDate |
       | AYHR171492       | Tester   | 21-June-21  | 22-June-21  |
-    #  | BGIR73460        | Tester   | 21-June-21  | 23-June-21  |
-    #  | BFER85199        | Tester   | 21-June-21  | 24-June-21  |
-     # | AYHR171905       | Tester   | 21-June-21  | 25-June-21  |
+      | BGIR73460        | Tester   | 21-June-21  | 23-June-21  |
+      | BFER85199        | Tester   | 21-June-21  | 24-June-21  |
+      | AYHR171905       | Tester   | 21-June-21  | 25-June-21  |
